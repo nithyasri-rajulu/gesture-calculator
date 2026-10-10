@@ -14,17 +14,7 @@ Install the pinned development requirements in a clean Python 3.12 environment. 
 
 ![Pipeline output](outputs/preview.png)
 
-## Interpretation and limitations
 
-Lighting, hand occlusion, camera placement and the palm-normalised pinch threshold affect usability. The UI currently supports one hand and a fixed 1280 x 720 display. No hand-recognition accuracy or real-user latency benchmark has been measured. The pretrained model is provided by Google and is not trained by this project. The current evidence supports this limited demonstration. Independent tests on new real inputs are needed before presenting broader performance claims.
-
-## Next experiment
-
-Run the live camera app, record a short demonstration, and test at least 20 expressions under multiple lighting conditions. Log false presses, missed presses and completion time before claiming camera performance.
-
-## How to explain this in an interview
-
-Explain the input assumptions first, then walk through the pipeline and a failure case. Show the test and generated result that supports each numerical claim. Be able to change one threshold, rerun the experiment and explain how it affects the result.
 
 ## References
 
