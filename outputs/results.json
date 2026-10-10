@@ -1,0 +1,33 @@
+{
+  "validation": "scripted interaction replay, not hand-detector validation",
+  "events": [
+    {
+      "time_s": 0.3,
+      "key": "1",
+      "expression": "1"
+    },
+    {
+      "time_s": 1.14,
+      "key": "2",
+      "expression": "12"
+    },
+    {
+      "time_s": 1.98,
+      "key": "+",
+      "expression": "12+"
+    },
+    {
+      "time_s": 2.82,
+      "key": "8",
+      "expression": "12+8"
+    },
+    {
+      "time_s": 3.66,
+      "key": "=",
+      "expression": "20"
+    }
+  ],
+  "final_result": "20",
+  "expected_result": "20",
+  "passed": true
+}
