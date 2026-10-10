@@ -1,9 +1,5 @@
 # Gesture Controlled Virtual Calculator Project Report
 
-## Purpose and provenance
-
-An October 2026 reconstruction of an earlier academic computer-vision project. The old source files were not recovered; this is a new implementation. The implementation was prepared in October 2026 for a mechatronics and robotics portfolio.
-
 ## Engineering approach
 
 OpenCV captures and mirrors webcam frames. A pretrained MediaPipe Hand Landmarker supplies fingertip and palm coordinates. The index fingertip selects a screen key. Thumb-index distance, divided by palm width, controls a pinch gate with separate close/release thresholds. A stable hover is required, a held pinch produces at most one event, and loss of tracking disarms the gate. Arithmetic is parsed through a small allowlisted AST evaluator; Python eval is never used.
