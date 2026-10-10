@@ -1,4 +1,4 @@
-"""Explicitly download Google's pretrained model; never runs on import."""
+# pretrained model
 from pathlib import Path
 import hashlib,json,urllib.request
 
