@@ -1,7 +1,5 @@
 # Gesture Controlled Virtual Calculator
 
-An October 2026 reconstruction of an earlier academic computer-vision project. The old source files were not recovered; this is a new implementation.
-
 ![Demonstration output](outputs/preview.png)
 
 ## What it does
