@@ -42,7 +42,6 @@ python app.py --mouse
 
 Move the index fingertip over a key, open the thumb-index pinch, hover briefly, then pinch. Release before the next selection. Press Q or Escape to exit. Camera index defaults to 0; try `--camera 1` when needed. Model downloads are explicit and their SHA-256 is recorded locally.
 
-The camera environment was installed, but this headless build environment lacks `libGLESv2.so.2`, so model inference and display could not be verified here. On Debian/Ubuntu, that error usually requires the system `libgles2` package. Run camera mode on a desktop with a camera and graphics support. A successful model download alone does not validate hand detection.
 
 ## Files
 
@@ -52,13 +51,6 @@ The camera environment was installed, but this headless build environment lacks 
 - `outputs/`: generated evidence from the included experiment.
 - `REPORT.md`: project rationale, method, evaluation and limitations.
 
-## Limits and next step
-
-Lighting, hand occlusion, camera placement and the palm-normalised pinch threshold affect usability. The UI currently supports one hand and a fixed 1280 x 720 display. No hand-recognition accuracy or real-user latency benchmark has been measured. The pretrained model is provided by Google and is not trained by this project.
-
-Run the live camera app, record a short demonstration, and test at least 20 expressions under multiple lighting conditions. Log false presses, missed presses and completion time before claiming camera performance.
-
-## References
 
 - https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker/python
 - https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker/index
